@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TIC TAK TOE</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tic Tak Toe</h1>
+    </header>
+    <aside class="scoreCard ">
+        <div class="user-1">
+            <p class="user-identity"></p>
+            <span class="scorenum1"></span>
+            <p class="emojy1">😂</p>
+        </div>
+        <div class="divide-line"></div>
+        <div class="user-2">
+            <p class="user-identity"></p>
+            <span class="scorenum2"></span>
+            <p class="emojy2">😭</p>
+        </div>
+    </aside>
+    <aside class="Description">
+        <h1>About Game!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, dolorem laborum. Vel dicta, commodi,
+            placeat quaerat corporis incidunt omnis laborum tempore dolore fugit eos ratione totam. Blanditiis esse qui
+            minima, nisi ratione iste nostrum harum officiis culpa perferendis odio voluptas fugiat rerum omnis placeat?
+            Accusamus provident dolores soluta id iure?</p>
+    </aside>
+    <section class="main-container">
+        <div class="outerbox">
+            <div class="first-cellgroup">
+                <div class="cell c00" data-cell="0"></div>
+                <div class="cell c01" data-cell="1"></div>
+                <div class="cell c02" data-cell="2"></div>
+            </div>
+            <div class="second-cellgroup">
+                <div class="cell c10" data-cell="3"></div>
+                <div class="cell c11" data-cell="4"></div>
+                <div class="cell c12" data-cell="5"></div>
+            </div>
+            <div class="third-cellgroup">
+                <div class="cell c20" data-cell="6"></div>
+                <div class="cell c21" data-cell="7"></div>
+                <div class="cell c22" data-cell="8"></div>
+            </div>
+            <!-- <div class="line"></div> -->
+        </div>
+    </section>
+
+    <div class="model-overlay">
+        <div class="model">
+            <div class="div1">
+                <h1>User Data</h1>
+                <div class="input">
+                    <input type="text" id="user-1" placeholder="User one">
+                    <input type="text" id="user-1" placeholder="User two">
+                    <button class="Next" type="button">Next</button>
+                </div>
+            </div>
+
+            <div class="div2 d-none">
+                <h1>Choose Your Symbol</h1>
+                <div class="symbol">
+                    <p class="times">&times;</p>
+                    <p class="zero">o</p>
+                    
+                </div>
+                <div class="btn">
+                    <button class="previous">Previous</button>
+                    <button class="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="model-overlay-new">
+        <div class="greeting-model">
+            <h1 class="greet-heading"></h1>
+            <Button class="continue-btn">Click to Continue</Button>
+        </div>
+    </div>
+
+
+
+    <script src="brain.js"></script>
+</body>
+
+</html>
